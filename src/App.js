@@ -1,25 +1,21 @@
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BeerList from './components/BeerList';
+import Favourites from './components/Favourites';
+import NavBar from './components/NavBar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route path="/demo-project/favourites" exact component={Favourites} />
+        <Route path="/demo-project/" exact component={BeerList} />
+      </Switch>
+    </Router>
   );
 }
 

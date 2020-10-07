@@ -1,0 +1,44 @@
+nav {
+  background-color: #008080;
+  font-size: 1rem;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 1em;
+
+    h1 {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.3em;  
+    }
+  
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      li {
+        & + li {
+          margin-left: 1em;
+        }
+        
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.9em;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .logo, 
+    ul {
+      margin-top: 1em;
+    }
+  }
+}
