@@ -1,17 +1,18 @@
 nav {
   background-color: #008080;
-  font-size: 1rem;
   .nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 1em;
+    padding-bottom: clamp(12px, 1rem, 1rem);
 
-    h1 {
+    h1,
+    h1 a {
+      text-decoration: none;
       color: #fff;
       font-weight: 400;
-      font-size: 1.3em;  
+      font-size: clamp(18px, 0.83rem, 0.83rem);
     }
   
     ul {
@@ -20,6 +21,8 @@ nav {
       list-style: none;
 
       li {
+        font-size: clamp(14px, 0.56rem, 0.56rem);
+
         & + li {
           margin-left: 1em;
         }
@@ -27,7 +30,7 @@ nav {
         a {
           color: #fff;
           text-decoration: none;
-          font-size: 0.9em;
+          font-size: clamp(14px, 0.56rem, 0.56rem);
 
           &:hover {
             opacity: 0.8;
@@ -38,7 +41,7 @@ nav {
 
     .logo, 
     ul {
-      margin-top: 1em;
+      margin-top: clamp(12px, 1rem, 1rem);
     }
   }
 }

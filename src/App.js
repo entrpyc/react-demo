@@ -1,8 +1,8 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 import React from 'react';
-import BeerList from './components/BeerList';
-import Favourites from './components/Favourites';
+import Home from './views/Home';
+import Favourites from './views/Favourites';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route path="/demo-project/favourites" exact component={Favourites} />
-        <Route path="/demo-project/" exact component={BeerList} />
+        <Route path="/demo-project/" exact component={Home} />
       </Switch>
     </Router>
   );

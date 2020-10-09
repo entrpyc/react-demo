@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class NavBar extends React.Component {
       <nav className="nav-bar-container">
         <div className="nav container">
           <div className="logo">
-            <h1>Beans Love Beers</h1>
+            <h1><Link to="/demo-project">Beans Love Beers</Link></h1>
           </div>
           <ul>
             <li><NavLink to="/demo-project">Home</NavLink></li>

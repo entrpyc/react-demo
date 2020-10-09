@@ -6,16 +6,20 @@
     align-items: baseline;
 
     input {
-      height: 3em;
-      font-size: 0.85em;
+      height: clamp(40px, 1.6rem, 1.6rem);
+      font-size: clamp(13px, 0.5rem, 0.5rem);
       border: 1px solid #888;
-      padding: 0.6em;
+      padding: clamp(6px, 0.4rem, 0.4rem);
 
       &:first-of-type {
         width: 40%;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: 0;
+
+        @media screen and(max-width: 500px) {
+          width: 100%;
+        }
       }
 
       &:last-of-type {

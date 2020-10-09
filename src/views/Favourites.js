@@ -1,5 +1,5 @@
 import React from 'react';
-import BeerList from './BeerList';
+import BeerList from '../components/BeerList';
 import { getFavouriteBeers } from '../helpers/favourites'
 
 class Favourites extends React.Component {

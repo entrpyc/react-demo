@@ -1,7 +1,7 @@
 {
   "name": "beer",
   "version": "0.1.0",
-  "homepage": "https://limechain.a-angelov.eu/demo-project/",
+  "homepage": "https://entrpyc.github.io/demo-project",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

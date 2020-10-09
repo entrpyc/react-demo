@@ -1,5 +1,11 @@
 // reset
 
+
+:focus,
+:active {
+  outline: 0;
+}
+
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -11,11 +17,13 @@ div {
   font-size: inherit;
 }
 
+// dynamic rems
 html {
   font-size: 2vw;
   line-height: 1.4;
 }
 
+// grid 
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -31,9 +39,4 @@ html {
 .section {
   margin-top: 2rem;
   margin-bottom : 2rem;
-}
-
-:focus,
-:active {
-  outline: 0;
 }
